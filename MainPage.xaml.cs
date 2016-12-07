@@ -26,5 +26,25 @@ namespace smart_controller
         {
             this.InitializeComponent();
         }
+
+        private void tv_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void music_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void lights_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void deviceList_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
