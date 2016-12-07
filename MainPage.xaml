@@ -10,15 +10,61 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+            <ColumnDefinition Width="4*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="4*"/>
+            <RowDefinition Height="4*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        <Button x:Name="tv" Content="Watch TV" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Height="100" Width="140" Click="tv_Click"/>
-        <Button x:Name="music" Content="Listen to Music" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Height="100" Width="140" Click="music_Click"/>
-        <Button x:Name="lights" Content="Control Lights" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="100" Width="140" Click="lights_Click"/>
-        <Button x:Name="deviceList" Content="Device List" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="100" Width="140" Click="deviceList_Click"/>
+
+        <TextBlock Text="Remote Control" FontSize="42" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        
+        <Button x:Name="tv" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="120" Width="120" Click="tv_Click">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE7F4;" FontSize="60"/>
+                <TextBlock Text="Watch TV" Grid.Row="1"/>
+            </Grid>
+        </Button>
+        
+        <Button x:Name="music" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Height="120" Width="120" Click="music_Click">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE189;" FontSize="60"/>
+                <TextBlock Text="Listen to Music" Grid.Row="1"/>
+            </Grid>
+        </Button>
+
+        <Button x:Name="lights" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Height="120" Width="120" Click="lights_Click">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEA80;" FontSize="60"/>
+                <TextBlock Text="Control Lights" Grid.Row="1"/>
+            </Grid>
+        </Button>
+
+        <Button x:Name="deviceList" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" Height="120" Width="120" Click="deviceList_Click">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8CC;" FontSize="60"/>
+                <TextBlock Text="Device List" Grid.Row="1"/>
+            </Grid>
+        </Button>
     </Grid>
 </Page>
