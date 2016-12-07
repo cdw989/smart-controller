@@ -8,6 +8,17 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="tv" Content="Watch TV" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Height="100" Width="140"/>
+        <Button x:Name="music" Content="Listen to Music" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Height="100" Width="140"/>
+        <Button x:Name="lights" Content="Control Lights" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Center" Height="100" Width="140"/>
+        <Button x:Name="deviceList" Content="Device List" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="100" Width="140"/>
     </Grid>
 </Page>
