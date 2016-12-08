@@ -7,7 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Background="{ThemeResource SystemAltHighColor}">
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="4*"/>
@@ -16,14 +16,15 @@
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="4*"/>
             <RowDefinition Height="4*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
 
-        <TextBlock Text="Remote Control" FontSize="42" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <TextBlock Text="Remote Control" FontSize="42" Grid.Column="1" Grid.ColumnSpan="2" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center"/>
         
-        <Button x:Name="tv" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Center" Height="120" Width="120" Click="tv_Click">
+        <Button x:Name="tv" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Height="120" Width="120" Click="tv_Click">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="4*"/>
@@ -34,7 +35,7 @@
             </Grid>
         </Button>
         
-        <Button x:Name="music" Grid.Column="2" Grid.Row="1" HorizontalAlignment="Center" Height="120" Width="120" Click="music_Click">
+        <Button x:Name="music" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" Height="120" Width="120" Click="music_Click">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="4*"/>
@@ -45,7 +46,7 @@
             </Grid>
         </Button>
 
-        <Button x:Name="lights" Grid.Column="1" Grid.Row="2" HorizontalAlignment="Center" Height="120" Width="120" Click="lights_Click">
+        <Button x:Name="lights" Grid.Column="1" Grid.Row="3" HorizontalAlignment="Center" Height="120" Width="120" Click="lights_Click">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="4*"/>
@@ -56,14 +57,14 @@
             </Grid>
         </Button>
 
-        <Button x:Name="deviceList" Grid.Column="2" Grid.Row="2" HorizontalAlignment="Center" Height="120" Width="120" Click="deviceList_Click">
+        <Button x:Name="settings" Grid.Column="2" Grid.Row="3" HorizontalAlignment="Center" Height="120" Width="120" Click="settings_Click">
             <Grid>
                 <Grid.RowDefinitions>
                     <RowDefinition Height="4*"/>
                     <RowDefinition Height="*"/>
                 </Grid.RowDefinitions>
-                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE8CC;" FontSize="60"/>
-                <TextBlock Text="Device List" Grid.Row="1"/>
+                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE115;" FontSize="60"/>
+                <TextBlock Text="Settings" Grid.Row="1"/>
             </Grid>
         </Button>
     </Grid>

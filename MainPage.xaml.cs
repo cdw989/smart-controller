@@ -43,7 +43,7 @@ namespace smart_controller
 
         }
 
-        private void deviceList_Click(object sender, RoutedEventArgs e)
+        private void settings_Click(object sender, RoutedEventArgs e)
         {
 
         }
