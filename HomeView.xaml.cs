@@ -3,9 +3,9 @@ using Windows.UI.Xaml.Controls;
 
 namespace smart_controller
 {
-    public sealed partial class MainPage : Page
+    public sealed partial class HomeView : Page
     {
-        public MainPage()
+        public HomeView()
         {
             this.InitializeComponent();
         }

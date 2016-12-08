@@ -11,7 +11,7 @@ namespace smart_controller.views
 
         private void home_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(MainPage));
+            this.Frame.Navigate(typeof(HomeView));
         }
     }
 }
