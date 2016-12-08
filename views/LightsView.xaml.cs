@@ -1,4 +1,5 @@
-﻿using Windows.UI.Xaml.Controls;
+﻿using Windows.UI.Xaml;
+using Windows.UI.Xaml.Controls;
 
 namespace smart_controller.views
 {
@@ -9,7 +10,7 @@ namespace smart_controller.views
             this.InitializeComponent();
         }
 
-        private void home_Click(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        private void home_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(HomeView));
         }

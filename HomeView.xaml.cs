@@ -1,4 +1,5 @@
-﻿using Windows.UI.Xaml;
+﻿using smart_controller.views;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
 namespace smart_controller
@@ -12,22 +13,22 @@ namespace smart_controller
 
         private void tv_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(views.TelevisionView));
+            this.Frame.Navigate(typeof(TelevisionView));
         }
 
         private void music_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(views.MusicView));
+            this.Frame.Navigate(typeof(MusicView));
         }
 
         private void lights_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(views.LightsView));
+            this.Frame.Navigate(typeof(LightsView));
         }
 
         private void settings_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(views.SettingsView));
+            this.Frame.Navigate(typeof(SettingsView));
         }
     }
 }
