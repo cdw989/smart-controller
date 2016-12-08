@@ -1,4 +1,4 @@
-﻿<UserControl
+﻿<Page
     x:Class="smart_controller.views.LightsView"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -9,8 +9,30 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <Grid>
-        <TextBox Text="Lights"/>
-        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEA80;" />
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="5*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="5*"/>
+        </Grid.RowDefinitions>
+
+        <Button x:Name="tv" HorizontalAlignment="Center" Height="120" Width="120" Click="home_Click">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="4*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <FontIcon FontFamily="Segoe MDL2 Assets" FontSize="24" Glyph="&#xE1C3;" />
+                <TextBlock Text="Home" Grid.Row="1"/>
+            </Grid>
+        </Button>
+
+        <Grid Grid.Column="1" Grid.Row="1">
+            <TextBox Text="Lights"/>
+            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xEA80;" />
+        </Grid>
     </Grid>
-</UserControl>
+</Page>

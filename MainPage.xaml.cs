@@ -1,26 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.IO;
-using System.Linq;
-using System.Runtime.InteropServices.WindowsRuntime;
-using Windows.Devices.Gpio;
-using Windows.Foundation;
-using Windows.Foundation.Collections;
-using Windows.UI.Xaml;
+﻿using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
-using Windows.UI.Xaml.Controls.Primitives;
-using Windows.UI.Xaml.Data;
-using Windows.UI.Xaml.Input;
-using Windows.UI.Xaml.Media;
-using Windows.UI.Xaml.Navigation;
-
-// The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
 namespace smart_controller
 {
-    /// <summary>
-    /// An empty page that can be used on its own or navigated to within a Frame.
-    /// </summary>
     public sealed partial class MainPage : Page
     {
         public MainPage()
@@ -30,22 +12,22 @@ namespace smart_controller
 
         private void tv_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(views.TelevisionView));
         }
 
         private void music_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(views.MusicView));
         }
 
         private void lights_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(views.LightsView));
         }
 
         private void settings_Click(object sender, RoutedEventArgs e)
         {
-
+            this.Frame.Navigate(typeof(views.SettingsView));
         }
     }
 }
